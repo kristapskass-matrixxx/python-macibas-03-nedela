@@ -25,3 +25,19 @@ def validate_date(date_str):
     return bool(re.match(pattern, date_str))
 # test change
 print("validator loaded")
+
+def is_valid_email(email: str) -> bool:
+    """Check if email contains @ and ."""
+    return "@" in email and "." in email
+
+
+def is_valid_age(age: int) -> bool:
+    """Check if age is between 0 and 120"""
+    return 0 <= age <= 120
+
+
+# DEBUG / TEST OUTPUT (for teacher visibility)
+if __name__ == "__main__":
+    print("Testing validators...")
+    print("Email test:", is_valid_email("test@example.com"))
+    print("Age test:", is_valid_age(25))
