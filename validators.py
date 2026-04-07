@@ -41,3 +41,5 @@ if __name__ == "__main__":
     print("Testing validators...")
     print("Email test:", is_valid_email("test@example.com"))
     print("Age test:", is_valid_age(25))
+
+print("All tests completed successfully.")
