@@ -23,3 +23,5 @@ def validate_date(date_str):
     """Return True if date in format YYYY-MM-DD"""
     pattern = r'^\d{4}-\d{2}-\d{2}$'
     return bool(re.match(pattern, date_str))
+# test change
+print("validator loaded")
